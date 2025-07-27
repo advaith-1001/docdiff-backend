@@ -1,0 +1,6 @@
+fastapi~=0.116.1
+uvicorn
+pytesseract~=0.3.13
+pillow~=11.3.0
+pydantic~=2.11.7
+pdf2image~=1.17.0
