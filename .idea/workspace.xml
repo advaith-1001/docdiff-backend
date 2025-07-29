@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f1554b0-1b46-483a-a0f7-e9719ce4da6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/docdiff-backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/upload.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/compare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/ocr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/text_comparator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/file_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/highlighter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routers/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/upload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/text_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/text_comparator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +68,10 @@
       <workItem from="1753460349633" duration="392000" />
       <workItem from="1753540065599" duration="7431000" />
       <workItem from="1753626025796" duration="2326000" />
+      <workItem from="1753721165772" duration="1445000" />
+      <workItem from="1753800643658" duration="2848000" />
+      <workItem from="1753805055354" duration="376000" />
+      <workItem from="1753805456140" duration="3800000" />
     </task>
     <servers />
   </component>
