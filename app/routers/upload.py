@@ -1,12 +1,10 @@
 import base64
 
 from fastapi import APIRouter, UploadFile, File, HTTPException
-from filetype import filetype
 from starlette.responses import JSONResponse
 
 from app.services.ai_summarizer import get_ai_summary
 from app.services.extractor import extract_text
-from difflib import HtmlDiff
 from app.services.ocr import extract_text
 from app.services.text_comparator import compare_texts
 from app.services.highlighter import highlight_pdfs

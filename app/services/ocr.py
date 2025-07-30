@@ -22,16 +22,14 @@ def is_docx(filename: str):
 
 
 async def extract_text_from_pdf(file: UploadFile) -> str:
-    """Handles both normal and scanned PDFs."""
     contents = await file.read()
 
-    # Try normal PDF extraction
+
     text = ""
     with pdfplumber.open(io.BytesIO(contents)) as pdf:
         for page in pdf.pages:
             text += page.extract_text() or ""
 
-    # If no text is found, fallback to OCR
     if not text.strip():
         images = convert_from_bytes(contents)
         for img in images:
@@ -53,7 +51,6 @@ async def extract_text_from_image(file: UploadFile) -> str:
 
 
 async def extract_text(file: UploadFile) -> str:
-    """Main method to route file type to proper extractor."""
     filename = file.filename.lower()
     if is_pdf(filename):
         return await extract_text_from_pdf(file)

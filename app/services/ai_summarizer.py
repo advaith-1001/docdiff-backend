@@ -2,23 +2,18 @@ import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 
-# Load environment variables from your .env file
+
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# Add a check to make sure the key was actually found
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY not found. Please check your .env file.")
 
-# --- THIS IS THE MISSING LINE ---
-# Configure the Gemini library with your API key
 genai.configure(api_key=GEMINI_API_KEY)
 
 
 async def get_ai_summary(text1: str, text2: str) -> str:
-    """
-    Sends two texts to the Gemini API and returns a summary of the differences.
-    """
+
     model = genai.GenerativeModel('gemini-1.5-flash')
 
     prompt = f"""

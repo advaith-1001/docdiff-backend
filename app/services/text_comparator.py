@@ -1,10 +1,7 @@
 import difflib
 
 def compare_texts(text1: str, text2: str):
-    """
-    Compare two texts line by line and highlight precise word-level differences,
-    preserving neat line structure.
-    """
+
     lines1 = text1.splitlines()
     lines2 = text2.splitlines()
 
@@ -31,10 +28,6 @@ def compare_texts(text1: str, text2: str):
 
 
 def word_level_diff(line1: str, line2: str):
-    """
-    Compare two lines word by word and return structured diff with spaces preserved.
-    Ensures the output is easy to read and segmented by word-level change.
-    """
     words1 = line1.split()
     words2 = line2.split()
 

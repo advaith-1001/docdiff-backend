@@ -83,12 +83,10 @@ async def ensure_pdf(upload_file: UploadFile) -> UploadFile:
 
     pdf_stream = BytesIO()
 
-    # Convert image to PDF
     if kind.mime.startswith("image/"):
         image = Image.open(BytesIO(file_bytes)).convert("RGB")
         image.save(pdf_stream, format="PDF")
 
-    # Convert DOCX to PDF (basic text-only handling)
     elif kind.mime == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
         doc = Document(BytesIO(file_bytes))
         pdf = FPDF()

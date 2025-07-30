@@ -21,7 +21,7 @@ import fitz  # PyMuPDF
 
 
 async def compare_pdf_formatting(file1: UploadFile, file2: UploadFile):
-    """Compares the formatting of two PDF files page by page."""
+
     file1_bytes = await file1.read()
     file2_bytes = await file2.read()
 
@@ -56,7 +56,6 @@ async def compare_pdf_formatting(file1: UploadFile, file2: UploadFile):
             })
 
         for i, (block1, block2) in enumerate(zip(blocks1, blocks2)):
-            # ... comparison logic for spans ...
             spans1 = block1.get('lines', [{}])[0].get('spans', [])
             spans2 = block2.get('lines', [{}])[0].get('spans', [])
 
@@ -67,20 +66,14 @@ async def compare_pdf_formatting(file1: UploadFile, file2: UploadFile):
                     "value1": f"{len(spans1)} text spans",
                     "value2": f"{len(spans2)} text spans"
                 })
-            # ... continue with your existing span comparison loop ...
 
     return differences
-
-
-# --- In your Flask/FastAPI endpoint ---
-# differences = compare_pdf_formatting("document1.pdf", "document2.pdf")
-# print(differences)
 
 import docx
 
 
 def compare_docx_formatting(file1: UploadFile, file2: UploadFile):
-    """Compares the formatting of two .docx files and returns a list of differences."""
+
     doc1 = docx.Document(file1.file)
     doc2 = docx.Document(file2.file)
     differences = []
@@ -105,7 +98,7 @@ def compare_docx_formatting(file1: UploadFile, file2: UploadFile):
                 "value2": f"{len(p2.runs)} text runs"
             })
 
-        # Compare properties of runs that do exist in both
+
         for j, (run1, run2) in enumerate(zip(p1.runs, p2.runs)):
             if run1.bold != run2.bold:
                 differences.append({
@@ -114,7 +107,6 @@ def compare_docx_formatting(file1: UploadFile, file2: UploadFile):
                     "value1": run1.bold,
                     "value2": run2.bold
                 })
-            # ... add other checks for italic, font size, etc. here ...
 
     return differences
 
