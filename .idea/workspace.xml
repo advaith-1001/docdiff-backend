@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f1554b0-1b46-483a-a0f7-e9719ce4da6d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/routers/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/upload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/services/ai_summarizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/ai_summarizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/compare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/highlighter.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/highlighter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/ocr.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/ocr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/text_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/text_comparator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +71,7 @@
       <workItem from="1753805055354" duration="376000" />
       <workItem from="1753805456140" duration="5602000" />
       <workItem from="1753873720964" duration="6828000" />
+      <workItem from="1754061156357" duration="398000" />
     </task>
     <servers />
   </component>

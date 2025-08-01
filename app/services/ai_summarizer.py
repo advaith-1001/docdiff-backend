@@ -17,9 +17,9 @@ async def get_ai_summary(text1: str, text2: str) -> str:
     model = genai.GenerativeModel('gemini-1.5-flash')
 
     prompt = f"""
-    You are a helpful assistant who specializes in comparing documents. Your task is to provide a concise, bullet-point summary of the key differences between two versions of a text.
+    You are a helpful assistant who specializes in comparing documents. Your task is to provide a concise summary of the key differences between two versions of a text.
     Analyze the 'Old Version' and the 'New Version' provided below. Focus on significant additions, deletions, and major rephrasing. Ignore minor punctuation or capitalization changes unless they change the meaning.
-    Start with a one-sentence overview, followed by a short detailed description of the key differences between two versions of a text.
+    Start with a one-sentence overview, followed by a short detailed description of the key differences between two versions of a text. Do not try to include markup or symbols like **
 
     --- OLD VERSION ---
     {text1}
