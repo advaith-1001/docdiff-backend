@@ -1,5 +1,4 @@
 import tempfile
-import mimetypes
 from fastapi import UploadFile
 from pathlib import Path
 from docx import Document

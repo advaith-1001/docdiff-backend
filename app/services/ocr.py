@@ -1,6 +1,4 @@
-import os
 import io
-import tempfile
 import pytesseract
 from pdf2image import convert_from_bytes
 from PIL import Image

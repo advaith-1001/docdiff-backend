@@ -8,7 +8,7 @@ filetype~=1.2.0
 starlette~=0.47.2
 pdfplumber~=0.11.7
 python-docx~=1.2.0
-fitz~=0.0.1.dev2
+PyMuPDF~=1.24.1
 pathlib~=1.0.1
 fpdf2~=2.8.3
 python-dotenv
