@@ -13,3 +13,4 @@ pathlib~=1.0.1
 fpdf2~=2.8.3
 python-dotenv
 google-generativeai
+python-multipart
